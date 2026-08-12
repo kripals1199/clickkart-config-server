@@ -1,0 +1,12 @@
+# docker/docker-compose.test.yml
+services:
+  config-server:
+    environment:
+      SPRING_PROFILES_ACTIVE: test
+      CONFIG_SERVER_HOSTNAME: config-server-test
+      CONFIG_SERVER_USERNAME: ${CONFIG_SERVER_USERNAME:?CONFIG_SERVER_USERNAME must be set for test}
+      CONFIG_SERVER_PASSWORD: ${CONFIG_SERVER_PASSWORD:?CONFIG_SERVER_PASSWORD must be set for test}
+      EUREKA_SERVER_HOST: eureka-server-test
+      EUREKA_SERVER_PORT: 8761
+      EUREKA_DASHBOARD_USERNAME: ${EUREKA_DASHBOARD_USERNAME:?EUREKA_DASHBOARD_USERNAME must be set for test}
+      EUREKA_DASHBOARD_PASSWORD: ${EUREKA_DASHBOARD_PASSWORD:?EUREKA_DASHBOARD_PASSWORD must be set for test}
