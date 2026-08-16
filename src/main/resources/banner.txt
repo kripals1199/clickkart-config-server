@@ -1,0 +1,59 @@
+${AnsiColor.BRIGHT_BLUE}
+############################################################################################
+#                                                                                          #
+#    ██████╗██╗     ██╗ ██████╗██╗  ██╗██╗  ██╗ █████╗ ██████╗ ████████╗                   #
+#   ██╔════╝██║     ██║██╔════╝██║ ██╔╝██║ ██╔╝██╔══██╗██╔══██╗╚══██╔══╝                   #
+#   ██║     ██║     ██║██║     █████╔╝ █████╔╝ ███████║██████╔╝   ██║                      #
+#   ██║     ██║     ██║██║     ██╔═██╗ ██╔═██╗ ██╔══██║██╔══██╗   ██║                      #
+#   ╚██████╗███████╗██║╚██████╗██║  ██╗██║  ██╗██║  ██║██║  ██║   ██║                      #
+#    ╚═════╝╚══════╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝                      #
+#                                                                                          #
+############################################################################################
+
+${AnsiColor.BRIGHT_GREEN}
+┌────────────────────────────── APPLICATION ─────────────────────────────────────────────────┐
+│ Name             : ${spring.application.name}                                              │
+│ Profile          : ${spring.profiles.active}                                               │
+│ Git Branch       : ${spring.cloud.config.server.git.default-label}                         │
+│ Git Repository   : ${spring.cloud.config.server.git.uri}                                   │
+│ Search Paths     : ${spring.cloud.config.server.git.search-paths}                          │
+│ Clone On Start   : ${spring.cloud.config.server.git.clone-on-start}                        │
+│ Force Pull       : ${spring.cloud.config.server.git.force-pull}                            │
+│ Git Timeout      : ${spring.cloud.config.server.git.timeout}s                              │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
+
+${AnsiColor.BRIGHT_CYAN}
+┌────────────────────────────── PLATFORM ────────────────────────────────────────────────────┐
+│ Java Version      : ${java.version}                                                        │
+│ Java Vendor       : ${java.vendor}                                                         │
+│ Java Runtime      : ${java.runtime.name}                                                   │
+│ OS                : ${os.name} ${os.version}                                               │
+│ Architecture      : ${os.arch}                                                             │
+│ User              : ${user.name}                                                           │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
+
+${AnsiColor.BRIGHT_YELLOW}
+┌────────────────────────────── SPRING ──────────────────────────────────────────────────────┐
+│ Spring Boot       : ${spring-boot.formatted-version}                                       │
+│ Spring Application: ${spring.application.name}                                             │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
+
+${AnsiColor.BRIGHT_MAGENTA}
+┌────────────────────────────── MANAGEMENT ──────────────────────────────────────────────────┐
+│ Endpoints         : ${management.endpoints.web.exposure.include}                           │
+│ Health Details    : ${management.endpoint.health.show-details}                             │
+│ Health Probes     : ${management.health.probes.enabled}                                    │
+│ Info Environment  : ${management.info.env.enabled}                                         │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
+
+${AnsiColor.BLACK}
+#############################################################################################
+#                                                                                           #
+#                  ${spring.application.name} STARTED SUCCESSFULLY                          #
+#                                                                                           #
+#              Profile : ${spring.profiles.active}                                          #
+#              Java    : ${java.version}                                                    #
+#              Boot    : ${spring-boot.formatted-version}                                   #
+#                                                                                           #
+#############################################################################################
+${AnsiColor.BLACK}
